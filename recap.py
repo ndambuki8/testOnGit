@@ -1,7 +1,11 @@
-#Python program to convert Temperature from Celsius To Fahrenheit
+#Python program to check if a number is positive begative or o
 
-celsius = 37.5
+num = float(input("Type valid number: "))
 
-#calculate farhenheit
-fa = (celsius * 1.8) + 32
-print('%0.1f degree celsius is equal to %0.1f degree Fahrenheit'%(celsius, fa))
+if num >= 0:
+    if num == 0:
+        print("Zero")
+    else:
+        print("Positive")
+else:
+    print("Negtaive")
