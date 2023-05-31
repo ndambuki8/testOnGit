@@ -1,11 +1,8 @@
-#Python program to check if a number is positive begative or o
+#Python program to check if a number is ODD OR EVEN
 
-num = float(input("Type valid number: "))
-
-if num >= 0:
-    if num == 0:
-        print("Zero")
-    else:
-        print("Positive")
+num = int(input('Enter a number: '))
+if (num % 2) == 0:
+    print("{0} is Even".format(num))
 else:
-    print("Negtaive")
+    print(f'{num} is odd')
+
