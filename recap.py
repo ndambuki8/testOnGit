@@ -1,18 +1,20 @@
 #Python program to check if a number is Prime or not
 
-num = 30
+num = 29
 
 flag = False
 
 if num == 1:
     print(num, "it is not a prime number")
 elif num > 1:
-    #check for factors
-    for i in range(2, num):
+    #printing all  factors
+    print("factors of num are: ")
+    for i in range(2, num +1):
         if (num % i) == 0:
             #if factor is found, set flag to true
+            print(f"->{i}\n")
             flag = True
-            break
+            # break
     if flag:
         print(num, "is not a prime number")
     else:
