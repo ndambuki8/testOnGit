@@ -1,8 +1,19 @@
-#Python program to check if a number is ODD OR EVEN
+#Python program to check if a number is Prime or not
 
-num = int(input('Enter a number: '))
-if (num % 2) == 0:
-    print("{0} is Even".format(num))
-else:
-    print(f'{num} is odd')
+num = 30
 
+flag = False
+
+if num == 1:
+    print(num, "it is not a prime number")
+elif num > 1:
+    #check for factors
+    for i in range(2, num):
+        if (num % i) == 0:
+            #if factor is found, set flag to true
+            flag = True
+            break
+    if flag:
+        print(num, "is not a prime number")
+    else:
+        print(num, "is a prime number")
