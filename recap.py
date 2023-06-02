@@ -1,21 +1,15 @@
-#Python program to check if a number is Prime or not
+#Python program to dislpay all the prime numbers within an interval
 
-num = 29
+lower = 900
+upper = 1000
 
-flag = False
+print("Pime numbers between ", lower, " and ", upper, " are: ")
 
-if num == 1:
-    print(num, "it is not a prime number")
-elif num > 1:
-    #printing all  factors
-    print("factors of num are: ")
-    for i in range(2, num +1):
-        if (num % i) == 0:
-            #if factor is found, set flag to true
-            print(f"->{i}\n")
-            flag = True
-            # break
-    if flag:
-        print(num, "is not a prime number")
-    else:
-        print(num, "is a prime number")
+for num in range(lower, upper + 1):
+    #All prime numbers are greater than 1
+    if num > 1:
+        for i in range(2, num):
+            if (num % i) == 0:
+                break
+        else:
+            print(num)
