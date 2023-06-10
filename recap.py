@@ -1,19 +1,6 @@
 #Python program to Check Armstrong Number
 
-num = int(input("Enter a number: "))
+age = int(input("Enter an age")
 
-n = len(str(num))
-
-sum = 0
-
-temp = num
-while temp > 0:
-    digit = temp % 10
-
-    sum += digit ** n
-    temp //= 10
-
-if num == sum:
-    print(num, "is an ArmStrong number")
-else:
-    print(num, "is not an ArmStrong number")   
+if age > 18:
+  print("of age") 
