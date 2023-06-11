@@ -3,4 +3,6 @@
 age = int(input("Enter an age")
 
 if age > 18:
-  print("of age") 
+  print("of age")
+else:
+  print("not of age")
