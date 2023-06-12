@@ -2,7 +2,9 @@
 
 age = int(input("Enter an age")
 
-if age > 18:
-  print("of age")
-else:
-  print("not of age")
+if age > 50:
+  print("of elderly age")
+elif age > 10 and age < 50:
+  print("youth")
+else: 
+  print("middle aged or child")
