@@ -1,10 +1,6 @@
-#Python program to Check Armstrong Number
+#Python program to implement for loop
 
-age = int(input("Enter an age")
+list = ['a', 'b', 'c']
 
-if age > 50:
-  print("of elderly age")
-elif age > 10 and age < 50:
-  print("youth")
-else: 
-  print("middle aged or child")
+for letter in list:
+  print(letter)
