@@ -1,19 +1,20 @@
-#Python program to Check Armstrong Number
+#Python program to find Armstrong numbers in an interval
+lower = 100
+upper = 2000
 
-num = int(input("Enter a number: "))
+for num in range(lower, upper + 1):
 
-n = len(str(num))
+    #order of number
+    order = len(str(num))
 
-sum = 0
+    #initialize sum
+    sum = 0
 
-temp = num
-while temp > 0:
-    digit = temp % 10
-
-    sum += digit ** n
-    temp //= 10
-
-if num == sum:
-    print(num, "is an ArmStrong number")
-else:
-    print(num, "is not an ArmStrong number")   
+    temp = num
+    while temp > 0:
+        digit = temp % 10
+        sum += digit ** order
+        temp //= 10
+        
+    if num == sum:
+        print(num)
