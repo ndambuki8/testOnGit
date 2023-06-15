@@ -1,20 +1,9 @@
-#Python program to find Armstrong numbers in an interval
-lower = 100
-upper = 2000
+#Python program to Find the sum of Natral numbers
+N = int(input("TYpe upper limit of natural numbers: "))
 
-for num in range(lower, upper + 1):
+sum = 0
 
-    #order of number
-    order = len(str(num))
+for i in range(0, N+1):
+    sum += i
 
-    #initialize sum
-    sum = 0
-
-    temp = num
-    while temp > 0:
-        digit = temp % 10
-        sum += digit ** order
-        temp //= 10
-        
-    if num == sum:
-        print(num)
+print(sum)
