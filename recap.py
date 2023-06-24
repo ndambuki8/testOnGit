@@ -50,13 +50,26 @@ my_truck.fill_tank()
 my_truck.drive()
 my_truck.update_fuel_level(8)
 
+#INstances as attributes in classes
+class Battery:
+    def __init__(self, size=75):
+        self.size = size
+        self.charge_level = 0
+
+    def get_range(self):
+        if self.size == 75:
+            return 260
+        elif self.size == 100:
+            return 315
+
 class ElectricCar(Car):
 
     def __init__(self, make, model, year):
         super().__init__(make, model, year)
 
-        self.battery_size = 75
-        self.charge_level = 0
+        # self.battery_size = 75
+        # self.charge_level = 0
+        self.battery = Battery()
 
     def charge(self):
         self.charge_level = 100
@@ -70,3 +83,4 @@ my_tesla = ElectricCar('tesla', 'model s', 2021)
 my_tesla.charge()
 my_tesla.drive()
 my_tesla.fill_tank()
+print(my_tesla.battery.get_range())
