@@ -1,9 +1,15 @@
-#Python program to display the powers of 2 using anonymous function
-terms = 10
+names = [
+    'Daniel',
+    'Mike',
+    'William'
+]
 
-#use anonymous function
-result = list(map(lambda x: 2 ** x, range(terms)))
+#List comprehension
+length = [len(name) for name in names]
 
-print("The total terms are: ", terms)
-for i in range(terms):
-    print("2 raised to power", i, "is", result[i])
+print(length)
+
+#DIctionary comprehension
+names_length_dict = {name:len(name) for name in names}
+
+print(names_length_dict)
