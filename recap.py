@@ -1,7 +1,4 @@
-#Python program to convert decimal into other number sysrems
-dec = 344
+#Python program to find the ASCII Value of the given character
 
-print("The decimal value of", dec, "is:")
-print(bin(dec), "in binary")
-print(oct(dec), "in octal")
-print(hex(dec), "in hexadecimal")
+c = 'A'
+print("The ASCII value of '" + c + "' is", ord(c))
