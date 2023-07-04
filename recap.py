@@ -1,21 +1,4 @@
-#Python program to find the LCM
-def compute_lcm(x, y):
+y = [1,2,3,4,5]
+def stack(x, y):
 
-    #choose the greater number
-    if x > y:
-        greater = x
-    else:
-        greater = y
-
-    while(True):
-        if((greater % x == 0) and (greater % y == 0)):
-            lcm = greater
-            break
-        greater += 1
-
-    return lcm
-
-num1 = 24
-num2 = 54
-
-print(compute_lcm(num1, num2))
+    
