@@ -1,14 +1,10 @@
-#LCM using GCD
-def compute_gcd(x,y):
-    while(y):
-          x, y = y, x % y
-    return x
+#Python program to find the factors of a number
 
-def compute_lcm(x, y):
-     lcm = (x*y)//compute_gcd(x,y)
-     return lcm
+def print_factors(x):
+    for i in range(1, x + 1):
+        if x % i == 0:
+            print(i)
 
-num1 = 54
-num2 = 24
+num = 320
 
-print("The LCM is", compute_lcm(num1, num2))
+print_factors(num)
