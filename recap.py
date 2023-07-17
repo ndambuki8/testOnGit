@@ -1,10 +1,7 @@
-#Python program to find the factors of a number
+#simple calculator
 
-def print_factors(x):
-    for i in range(1, x + 1):
-        if x % i == 0:
-            print(i)
+num1 = int(input("Type first value: "))
+num2 = int(input("Type second value "))
 
-num = 320
-
-print_factors(num)
+sum = num1 + num2
+print(sum)
